@@ -5,7 +5,7 @@ def createServer():
     # create a phone
     serversocket = socket(AF_INET, SOCK_STREAM)
     try:
-        # say that you are willing to answer phonecalls on port 9000
+        # say that you are willing to answer phonecalls on port 8000
         serversocket.bind(('localhost', 8000))
         serversocket.listen(5) # listen for phonecalls and que up up to 4 additional get requests
         print('Server accessed at http://localhost:8000')
